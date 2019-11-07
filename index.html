@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            E S T A G I O
+        </nav>
+    </header>
+    <div class="container">
+        <button id='inviar'> Adicionar Filmes </button>
+        <div class='invi' hidden>
+            <div class="overlay">
+                <div class="mddados">
+                    <div class="cssdados">
+                        <button title="Sair" class='sair'>X</button>
+                        <br>
+                        <input type="text" class="inputdp" placeholder="Nome" name="nome"><br>
+                        <input type="text" class="inputdp" placeholder="Resumo" name="resumo"><br>
+                        <input type="number" max="10" min="0.1" class="inputdp" placeholder="Nota" name="nota"><br>
+                        <input type="date" class="inputdp" placeholder="Data de lançamento" name="dtlanca"><br>
+                        <br>
+                        <button id="enviar" onclick="enviar()" class="buttondp">enviar</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="filmes">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Resumo</th>
+                        <th>Nota</th>
+                        <th>Data de Lançamento</th>
+                        <th>Butoes</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
